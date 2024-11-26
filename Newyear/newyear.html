@@ -1,15 +1,4 @@
-
-<html lang="vi"
-    __fvdsurfcanyoninserted="1"
-    class="
-        clickberry-extension
-        clickberry-extension-standalone
-        clickberry-extension
-        clickberry-extension-standalone
-        clickberry-extension
-        clickberry-extension-standalone
-    "
->
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
@@ -18,34 +7,19 @@
         <script>
             window.open = function () {};
             window.print = function () {};
-            // Support hover state for mobile.
-            if (false) {
-                window.ontouchstart = function () {};
-            }
         </script>
-        <script
-            type="text/javascript"
-            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
-        ></script>
         <meta content="clickberry-extension-here" />
     </head>
 
-    <body>
+    <body style="background-image: "./MyAvartar.jpg"; background-size: cover;">
         <link
             href="https://fonts.googleapis.com/css?family=Wendy+One"
             rel="stylesheet"
             type="text/css"
         />
         <div class="pyro">
-            <div class="before">
-                
-            </div>
-            <div class="after">
-
-            </div>
             <div class="container">
-                <!-- 2. Dòng chữ Happy Birthday
-                Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+                <!-- Dòng chữ Happy Birthday -->
                 <div class="balloon">
                     <div><span>H</span></div>h
                     <div><span>A</span></div>a
@@ -61,34 +35,28 @@
                     <div><span>A</span></div>R
                     <div><span>Y</span></div>R
                 </div>
+
                 <div class="avatar">
-                    <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                    <!-- Avatar và tên người nhận lời chúc -->
                     <img src="./MyAvartar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
-                    <!-- 4. Tên của người đó -->
                     <h1 onclick="showMessage()" class="avatar__title">Idol</h1>
                 </div>
-                
-                <!-- 5. Phần nhạc -->
-                <!-- <audio id="player" autoplay loop>
-                    <source src="./music.mp3" type="audio/mp3">
-                </audio> -->
             </div>
         </div>
+
         <script>
-            if (document.location.search.match(/type=embed/gi)) {
-                window.parent.postMessage("resize", "*");
-            }
             function showMessage() {
-                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                // Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
-                    title: "Lời nhắn", // Tiêu đề của popup
-                    text: "Gửi đến Idol, Đến đây cũng là cái sinh nhật thứ 9 tui chúc mấy người rồi, tính ra dài phết chứ đùa, thật may mắn khi được biết và làm bạn với mấy người. Dù tính tình như công chúa đôi lúc khó tính và khó chiều nhưng luôn hết lòng vì bạn bè, một con người của công việc nên đôi khi làm việc không màn đến sức khỏe của mình điểm này t luôn ngưỡng mộ mí người , xinh thì khen thừa quá nhưng ai mà hong thân hay chưa tiếp xúc thì lạnh lùng với khó gần vô , thân rồi mới thấy những mặt cute của mí người, thiếu nữ yếu đuối, nữ hoàng vô tri, tổng lãnh thiên thần của những món ăn ngon. Hôm nay sinh nhật của công chúa, cũng là cột mốt 9 năm hai đứa làm bạn, chúc mấy người mọi lời chúc tốt đẹp nhất, mọi điều hạnh phúc nhất đến với mình, tuổi mới luôn vui vẻ nha, giữ gìn sức khỏe !", // Nội dung lời nhắn
+                    title: "Lời nhắn",
+                    text: "Gửi đến Idol, Đến đây cũng là cái sinh nhật thứ 9 tui chúc mấy người rồi, tính ra dài phết chứ đùa, thật may mắn khi được biết và làm bạn với mấy người. Dù tính tình như công chúa đôi lúc khó tính và khó chiều nhưng luôn hết lòng vì bạn bè, một con người của công việc nên đôi khi làm việc không màn đến sức khỏe của mình điểm này t luôn ngưỡng mộ mí người , xinh thì khen thừa quá nhưng ai mà hong thân hay chưa tiếp xúc thì lạnh lùng với khó gần vô , thân rồi mới thấy những mặt cute của mí người, thiếu nữ yếu đuối, nữ hoàng vô tri, tổng lãnh thiên thần của những món ăn ngon. Hôm nay sinh nhật của công chúa, cũng là cột mốt 9 năm hai đứa làm bạn, chúc mấy người mọi lời chúc tốt đẹp nhất, mọi điều hạnh phúc nhất đến với mình, tuổi mới luôn vui vẻ nha, giữ gìn sức khỏe !",
                     button: {
                         text: "❤️️",
                     },
                 });
             }
         </script>
+
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
 </html>
