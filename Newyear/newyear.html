@@ -7,33 +7,40 @@
         <script>
             window.open = function () {};
             window.print = function () {};
+            // Đảm bảo hàm showMessage được định nghĩa sớm
+            function showMessage() {
+                swal({
+                    title: "Lời nhắn", 
+                    text: "Gửi đến Idol, Đến đây cũng là cái sinh nhật thứ 9 tui chúc mấy người rồi, tính ra dài phết chứ đùa, thật may mắn khi được biết và làm bạn với mấy người. Dù tính tình như công chúa đôi lúc khó tính và khó chiều nhưng luôn hết lòng vì bạn bè, một con người của công việc nên đôi khi làm việc không màn đến sức khỏe của mình điểm này t luôn ngưỡng mộ mí người , xinh thì khen thừa quá nhưng ai mà hong thân hay chưa tiếp xúc thì lạnh lùng với khó gần vô , thân rồi mới thấy những mặt cute của mí người, thiếu nữ yếu đuối, nữ hoàng vô tri, tổng lãnh thiên thần của những món ăn ngon. Hôm nay sinh nhật của công chúa, cũng là cột mốt 9 năm hai đứa làm bạn, chúc mấy người mọi lời chúc tốt đẹp nhất, mọi điều hạnh phúc nhất đến với mình, tuổi mới luôn vui vẻ nha, giữ gìn sức khỏe !",
+                    button: {
+                        text: "❤️️", 
+                    },
+                });
+            }
         </script>
         <meta content="clickberry-extension-here" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Đảm bảo thư viện SweetAlert đã được tải đúng -->
     </head>
 
     <body style="background-image: url('./MyAvartar.jpg'); background-size: cover;">
-        <link
-            href="https://fonts.googleapis.com/css?family=Wendy+One"
-            rel="stylesheet"
-            type="text/css"
-        />
+        <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
         <div class="pyro">
             <div class="container">
                 <!-- Dòng chữ Happy Birthday -->
                 <div class="balloon">
-                    <div><span>H</span></div>
-                    <div><span>A</span></div>
-                    <div><span>P</span></div>
-                    <div><span>P</span></div>
-                    <div><span>Y</span></div>
-                    <div><span>B</span></div>
-                    <div><span>I</span></div>
-                    <div><span>R</span></div>
-                    <div><span>T</span></div>
-                    <div><span>H</span></div>
-                    <div><span>D</span></div>
-                    <div><span>A</span></div>
-                    <div><span>Y</span></div>
+                    <div><span>H</span></div>h
+                    <div><span>A</span></div>a
+                    <div><span>P</span></div>p
+                    <div><span>P</span></div>p
+                    <div><span>Y</span></div>y
+                    <div><span>B</span></div>N
+                    <div><span>I</span></div>E
+                    <div><span>R</span></div>W
+                    <div><span>T</span></div>Y
+                    <div><span>H</span></div>E
+                    <div><span>D</span></div>A
+                    <div><span>A</span></div>R
+                    <div><span>Y</span></div>R
                 </div>
 
                 <div class="avatar">
@@ -43,6 +50,5 @@
                 </div>
             </div>
         </div>
-
-        <script>
-         
+    </body>
+</html>
