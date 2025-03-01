@@ -1,57 +1,54 @@
+<!DOCTYPE html>
 <html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
-        <title>HAPPY WEDDING</title>
+        <title>HAPPY BIRTHDAY</title>
         <link rel="stylesheet" href="./style.css">
         <script>
             window.open = function () {};
             window.print = function () {};
             
-            // Hàm showMessage hiển thị thông điệp
             function showMessage() {
                 swal({
                     title: "Lời nhắn", 
-                    text: "Gửi đến Thảo Sương, Thế là lớp trưởng ngày nào của lớp cũng đã bước lên xe hoa và viết lên trang tiếp theo của cuộc đời, đây là món quà nhỏ để chúc mừng m và người thương nhe, chúc 2 người những lời chúc tốt đẹp nhất và sẽ luôn hạnh phúc bên nhau trên suốt hành trình này.",
+                    text: "Gửi đến Bảo Trâm, Thế là hôm nay là sinh nhật của công chúa nhỏ rồi! Chúc em tuổi mới tràn đầy niềm vui, sức khỏe và thật hạnh phúc trên hành trình của mình nhé!",
                     button: {
-                        text: "❤️️", 
+                        text: "❤️️",
                     },
                 });
             }
 
-            // Chuyển hướng sau 45 giây
             setTimeout(function() {
                 window.location.href = "https://ego0303.github.io/thaosuongg/";
-            }, 20000); // 45,000 milliseconds = 45 seconds
+            }, 20000); 
         </script>
         <meta content="clickberry-extension-here" />
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Đảm bảo thư viện SweetAlert đã được tải đúng -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
-
-    <body style="background-image: url('./MyAvartar.jpg'); background-size: cover;">
+    <body style="background-image: url('./MyAvartar.jpg'); background-size: cover; text-align: center;">
         <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
         <div class="pyro">
             <div class="container">
-                <!-- Dòng chữ Happy Wedding -->
-                <div class="balloon">
+                <div class="balloon" style="display: flex; justify-content: center; gap: 5px;">
                     <div><span>H</span></div>
                     <div><span>A</span></div>
                     <div><span>P</span></div>
                     <div><span>P</span></div>
                     <div><span>Y</span></div>
-                    <div><span>W</span></div>
-                    <div><span>E</span></div>
-                    <div><span>D</span></div>
-                    <div><span>D</span></div>
+                    <div style="width: 20px;"></div>
+                    <div><span>B</span></div>
                     <div><span>I</span></div>
-                    <div><span>N</span></div>
-                    <div><span>G</span></div>
+                    <div><span>R</span></div>
+                    <div><span>T</span></div>
+                    <div><span>H</span></div>
+                    <div><span>D</span></div>
+                    <div><span>A</span></div>
+                    <div><span>Y</span></div>
                 </div>
-
                 <div class="avatar">
-                    <!-- Avatar và tên người nhận lời chúc -->
-                    <img src="./MyAvartar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
-                    <h1 onclick="showMessage()" class="avatar__title">Lời Chúc</h1>
+                    <img src="./MyAvartar.jpg" alt="Avatar" class="avatar__img" onclick="showMessage()" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; margin-top: 20px;" />
+                    <h1 onclick="showMessage()" class="avatar__title" style="cursor: pointer; margin-top: 10px; font-size: 24px; color: white;">Mở Thư</h1>
                 </div>
             </div>
         </div>
